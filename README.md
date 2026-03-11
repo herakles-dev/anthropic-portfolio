@@ -88,8 +88,8 @@ Every project below was built through Claude Code.
 | Active AI agents | 69 (95 total) |
 | Slash-command skills | 52 |
 | Enforcement hooks | 12 |
-| SSL-enabled domains | 44+ |
-| GitHub repositories | 33 (22 public) |
+| SSL-enabled domains | 30+ |
+| GitHub repositories | 33 (23 public) |
 | Claude Code hours | 1,600+ verified |
 | Claude Code sessions | 2,000+ |
 
