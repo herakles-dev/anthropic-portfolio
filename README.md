@@ -95,6 +95,21 @@ Every project below was built through Claude Code.
 
 ---
 
+## Code Samples
+
+Selected source files from the platform, browsable directly in this repo:
+
+| File | What It Shows |
+|------|---------------|
+| [`samples/v11-hooks/guard-enforcement.sh`](samples/v11-hooks/guard-enforcement.sh) | 85-line boundary guard — risk classification, autonomy checking, tool policy enforcement at every Write/Edit/Bash call |
+| [`samples/v11-hooks/common.sh`](samples/v11-hooks/common.sh) | V11 hook library — deny-wins semantics, typed artifact handoffs, schema validation, formation-aware file ownership |
+| [`samples/agent-framework/formations.py`](samples/agent-framework/formations.py) | 8 Agent Team formation definitions with DAAO routing, wave ordering, per-role tool policies, gate criteria |
+| [`samples/agent-framework/model_router.py`](samples/agent-framework/model_router.py) | Multi-provider abstraction — Bedrock, OpenRouter, Anthropic behind a single async interface with streaming |
+
+These are excerpts from the full projects linked above. The complete source for Nova Forge is public at [nova-forge](https://github.com/herakles-dev/nova-forge).
+
+---
+
 ## Server
 
 Intel i7-8700 (6C/12T) | 128GB RAM | 906GB storage | Debian Linux | Purchased at auction. No cloud provider, no team, no VC. Just a machine and Claude Code.
