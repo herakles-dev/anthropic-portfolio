@@ -48,7 +48,7 @@ Browser-based terminal with WebGL rendering, tmux persistence, WebSocket multipl
 ### Claude History Explorer — Session Analytics
 Custom analytics dashboard indexing every Claude Code session. 2GB of conversation data — session duration, tool call frequency, token consumption. A dataset on how a power user interacts with Claude Code at scale.
 
-**Next.js 15 | 21,000+ source files**
+**Next.js 15 | 21,000+ source files** *(source available on request)*
 
 ---
 
@@ -73,7 +73,7 @@ Every project below was built through Claude Code.
 | **Manifold Visualizer** | WebGPU mathematical surface renderer — 25+ manifold types, WGSL compute shaders, audio-reactive. | [Source](https://github.com/herakles-dev/manifold-visualizer) |
 | **Observability Stack** | Production monitoring — Grafana, Prometheus, Loki, Promtail, OpenTelemetry, Fail2ban. | [Source](https://github.com/herakles-dev/observability-showcase) |
 | **CK Reynolds Tax** | Client SaaS platform — 55 API routes, 2FA, IRS compliant. Next.js, Supabase, Square. | [Showcase](https://github.com/herakles-dev/ckreynolds-tax-showcase) |
-| **Portfolio Showcase** | Full platform overview — 33 services, 77 containers, SSO, observability. | [Source](https://github.com/herakles-dev/portfolio-showcase) |
+| **Portfolio Showcase** | Full platform overview — SSO, observability, architecture diagrams. | [Source](https://github.com/herakles-dev/portfolio-showcase) |
 | **MCP Inspector** | Visual testing tool for Model Context Protocol servers. | [Source](https://github.com/herakles-dev/inspector) |
 
 ---
