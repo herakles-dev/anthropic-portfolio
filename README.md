@@ -40,7 +40,8 @@ Browser-based terminal with WebGL rendering, tmux persistence, WebSocket multipl
 
 **380 tests | TypeScript + Node.js | Docker deployed**
 
-**Showcase:** [iolaus-zeus-showcase](https://github.com/herakles-dev/iolaus-zeus-showcase)
+**Source:** [herakles-terminal](https://github.com/herakles-dev/herakles-terminal)
+**Platform showcase:** [iolaus-zeus-showcase](https://github.com/herakles-dev/iolaus-zeus-showcase)
 
 ---
 
@@ -88,7 +89,7 @@ Every project below was built through Claude Code.
 | Slash-command skills | 52 |
 | Enforcement hooks | 12 |
 | SSL-enabled domains | 44+ |
-| GitHub repositories | 30 (19 public) |
+| GitHub repositories | 33 (22 public) |
 | Claude Code hours | 1,600+ verified |
 | Claude Code sessions | 2,000+ |
 
