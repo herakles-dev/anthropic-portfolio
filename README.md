@@ -101,12 +101,20 @@ Selected source files from the platform, browsable directly in this repo:
 
 | File | What It Shows |
 |------|---------------|
-| [`samples/v11-hooks/guard-enforcement.sh`](samples/v11-hooks/guard-enforcement.sh) | 85-line boundary guard — risk classification, autonomy checking, tool policy enforcement at every Write/Edit/Bash call |
-| [`samples/v11-hooks/common.sh`](samples/v11-hooks/common.sh) | V11 hook library — deny-wins semantics, typed artifact handoffs, schema validation, formation-aware file ownership |
-| [`samples/agent-framework/formations.py`](samples/agent-framework/formations.py) | 8 Agent Team formation definitions with DAAO routing, wave ordering, per-role tool policies, gate criteria |
-| [`samples/agent-framework/model_router.py`](samples/agent-framework/model_router.py) | Multi-provider abstraction — Bedrock, OpenRouter, Anthropic behind a single async interface with streaming |
+| [`samples/hooks/guard-write-gates.sh`](samples/hooks/guard-write-gates.sh) | PreToolUse — file ownership via formation registry, schema validation, task-state gating, plan-mode tracking |
+| [`samples/hooks/track-autonomy.sh`](samples/hooks/track-autonomy.sh) | PostToolUse — 5-level trust escalation (A0→A4), JSONL audit with diff hashing, flock-safe writes, log rotation |
+| [`samples/hooks/sync-tasks.sh`](samples/hooks/sync-tasks.sh) | PostToolUse — task lifecycle state machine, artifact persistence, formation heartbeats, background memory indexing |
+| [`samples/hooks/enforce-test-coverage.sh`](samples/hooks/enforce-test-coverage.sh) | PreToolUse — deployment gate blocking below threshold, auto-detects pytest/jest/go/cargo/bun, cached detection |
+| [`samples/agents/agent-architect.md`](samples/agents/agent-architect.md) | V11 agent definition — YAML frontmatter (formation_role, execution mode, workflow graph), 2-checkpoint protocol, artifact handoff |
+| [`samples/agents/security-engineer.md`](samples/agents/security-engineer.md) | Domain agent — STRIDE threat modeling, OWASP Top 10 assessment, formation roles (security-review, feature-impl) |
+| [`samples/agents/meta-agent.md`](samples/agents/meta-agent.md) | Self-referential agent — manages creation, versioning, deployment of all other agents in the ecosystem |
+| [`samples/oss-contribution-engine/validate.sh`](samples/oss-contribution-engine/validate.sh) | 8-gate pre-flight validation for open source PRs — competing PRs, claims, labels, freshness, CLA, comprehension |
+| [`samples/oss-contribution-engine/comprehend.sh`](samples/oss-contribution-engine/comprehend.sh) | 4-tier repo comprehension — inline read → CONTRIBUTING.md scan → deep clone analysis → Atheneum RAG |
+| [`samples/oss-contribution-engine/pre-submit.sh`](samples/oss-contribution-engine/pre-submit.sh) | 10-check compliance gate — forbidden patterns, DCO, secrets scan, test evidence, AI disclosure rules |
+| [`samples/oss-contribution-engine/scoring.yml`](samples/oss-contribution-engine/scoring.yml) | Weighted issue scoring algorithm — stars, reactions, label quality, solvability, credibility, freshness |
 
-These are excerpts from the full projects linked above. The complete source for Nova Forge is public at [nova-forge](https://github.com/herakles-dev/nova-forge).
+Production hooks (5,700+ executions). OSS engine has 4 open PRs to modelcontextprotocol and kubeflow.
+Architecture methodology: [herakles-agentic-architecture](https://github.com/herakles-dev/herakles-agentic-architecture).
 
 ---
 

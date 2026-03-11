@@ -1,0 +1,78 @@
+# Issue Scoring Criteria
+# Total score: 0-100 (higher = better target)
+
+weights:
+  repo_stars:        0.15   # Repository popularity
+  issue_reactions:   0.15   # Community demand signal
+  label_quality:     0.15   # Maintainer-invited contributions
+  solvability:       0.20   # Can we actually fix this?
+  credibility_value: 0.20   # Will this PR impress?
+  freshness:         0.15   # Recent, no competing PRs
+
+# Scoring rubrics
+rubrics:
+  repo_stars:
+    - range: [0, 100]
+      score: 10
+    - range: [100, 1000]
+      score: 30
+    - range: [1000, 10000]
+      score: 60
+    - range: [10000, 50000]
+      score: 80
+    - range: [50000, 999999]
+      score: 100
+
+  issue_reactions:
+    - range: [0, 2]
+      score: 20
+    - range: [3, 10]
+      score: 50
+    - range: [11, 50]
+      score: 80
+    - range: [51, 999]
+      score: 100
+
+  label_quality:
+    labels:
+      "good first issue": 90
+      "help wanted": 85
+      "bug": 70
+      "documentation": 60
+      "enhancement": 50
+      default: 30
+
+  solvability:
+    criteria:
+      - clear_reproduction_steps: +20
+      - small_scope: +25
+      - test_exists: +15
+      - familiar_stack: +20
+      - complex_architecture: -15
+      - requires_deep_domain: -10
+
+  credibility_value:
+    criteria:
+      - s_tier_org: +30
+      - a_tier_org: +20
+      - code_change: +20       # vs docs-only
+      - test_included: +15
+      - non_trivial: +15
+
+  freshness:
+    - age_days: [0, 7]
+      score: 100
+    - age_days: [8, 30]
+      score: 70
+    - age_days: [31, 90]
+      score: 40
+    - age_days: [91, 365]
+      score: 20
+    - age_days: [366, 9999]
+      score: 5
+
+# Minimum score to pursue
+thresholds:
+  pursue: 55          # Minimum score to add to backlog
+  priority: 75        # High-priority, act fast
+  must_do: 90         # Drop everything
