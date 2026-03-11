@@ -120,7 +120,7 @@ Architecture methodology: [herakles-agentic-architecture](https://github.com/her
 
 ## Server
 
-Intel i7-8700 (6C/12T) | 128GB RAM | 906GB storage | Debian Linux | Purchased at auction. No cloud provider, no team, no VC. Just a machine and Claude Code.
+Intel i7-8700 (6C/12T) | 128GB RAM | 906GB storage | Debian Linux | Remote VDS. No team, no VC. Just a server and Claude Code.
 
 ---
 
